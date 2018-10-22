@@ -19,6 +19,8 @@ $this->get('one-to-one-inverse', 'OneToOneController@oneToOneInverse');
 $this->get('one-to-one-insert', 'OneToOneController@oneToOneInsert');
 //one to many
 $this->get('one-to-many', 'OneToManyController@oneToMany');
+//many to one
+$this->get('many-to-one', 'OneToManyController@manyToOne');
 
 Route::get('/', function () {
     return view('welcome');

@@ -27,4 +27,14 @@ class OneToManyController extends Controller
         echo '<hr>';
         }
     }
+
+    public function manyToOne()
+    {
+        $stateName = 'Munich';
+        $state = State::where('name', $stateName)->get()->first();
+        echo "<br>{$state->name}</br>";
+
+        $country = $state->country()->get()->first();
+        echo "<br>Country: {$country->name}";
+    }
 }

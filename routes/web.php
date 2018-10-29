@@ -21,6 +21,8 @@ $this->get('one-to-one-insert', 'OneToOneController@oneToOneInsert');
 $this->get('one-to-many', 'OneToManyController@oneToMany');
 //many to one
 $this->get('many-to-one', 'OneToManyController@manyToOne');
+//one to many
+$this->get('one-to-many-two', 'OneToManyController@oneToManyTwo');
 
 Route::get('/', function () {
     return view('welcome');
